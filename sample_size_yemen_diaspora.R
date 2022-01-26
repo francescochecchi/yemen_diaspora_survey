@@ -55,7 +55,7 @@
   ## RDS survey parameters
     
     # Number of respondents
-    n_respondents <- seq(100, 500, by = 100)
+    n_respondents <- seq(300, 1200, by = 150)
     
     # Attrition (proportion of unusable responses)
     attrition <- 0.20
