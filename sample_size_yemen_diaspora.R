@@ -37,11 +37,8 @@
     setwd(dirname(current_path ))
     print( getwd() )
     
-      # set sub-directory where survey datasets are stored
-      dir_surveys <- paste(getwd( ), "/survey_datasets", sep = "")
-    
     # Initialise random numbers
-    # set.seed(123)
+    set.seed(123)
     
     # Colour-blind palette for graphing
     palette_cb <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -55,7 +52,7 @@
   ## RDS survey parameters
     
     # Number of respondents
-    n_respondents <- seq(300, 1200, by = 150)
+    n_respondents <- seq(100, 200, by = 100)
     
     # Attrition (proportion of unusable responses)
     attrition <- 0.20
@@ -110,7 +107,7 @@
     power_needed <- 0.80
     
     # Number of simulations per scenario
-    n_sim <- 100
+    n_sim <- 10
 
 #.........................................................................................
 ### Bespoke functions
